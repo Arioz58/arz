@@ -4,16 +4,6 @@ import ARZphone from "../assets/ARZ-phone.png";
 import ARZbrk from "../assets/ARZ-brk.png";
 import { useEffect } from "react";
 
-document.getElementById('about').onmousemove = e => {
-    for(const card of document.querySelectorAll('.arz-about-grid > div')){
-        const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
-        card.style.setProperty('--x', `${x}px`);
-        card.style.setProperty('--y', `${y}px`);
-    }
-}
-
 const About = () => {
     useEffect(() => {
         const handleMouseMove = e => {
@@ -26,10 +16,15 @@ const About = () => {
             }
         };
     
-        document.getElementById('about').addEventListener('mousemove', handleMouseMove);
+        const aboutElement = document.getElementById('about');
+        if (aboutElement) {
+            aboutElement.addEventListener('mousemove', handleMouseMove);
+        }
     
         return () => {
-            document.getElementById('about').removeEventListener('mousemove', handleMouseMove);
+            if (aboutElement) {
+                aboutElement.removeEventListener('mousemove', handleMouseMove);
+            }
         };
     }, []);
 
@@ -48,7 +43,7 @@ const About = () => {
                     <div className="arz-about-phone inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            <p>ARZ Web Concept est  spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
+                            <p>ARZ Web Concept est spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
                             <img className="ARZ-phone" src={ARZphone} alt="phone" />
                         </div>
                     </div>
