@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     animation: appear 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
@@ -33,6 +33,30 @@
     font-size: 2rem;
     color: #fff;
     text-align: center;
+}
+
+.banner-contact{
+    opacity: 0;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.418), rgba(255, 255, 255, 0.459));
+    backdrop-filter: blur(10px);
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    animation: appear 0.5s cubic-bezier(0, 0.68, 0.18, 1) 0.5s forwards;
+    transition: 0.5s cubic-bezier(0, 0.68, 0.18, 1);
+}
+
+.banner-contact:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.295);
+    transition: 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
 @keyframes appear {

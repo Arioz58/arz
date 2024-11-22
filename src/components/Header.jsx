@@ -1,8 +1,28 @@
+import React, { useRef, useEffect, useState } from 'react';
 import "../styles/Header.css";
 
 const Header = () => {
+    const [isSticky, setIsSticky] = useState(false);
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 400) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
     return (
-        <header className="header">
+        <header className={`header ${isSticky ? 'sticky':''}`}>
             <nav>
                 <a href="#home">ARZ.</a>
                 <ul>
@@ -14,9 +34,6 @@ const Header = () => {
                     </li>
                     <li>
                         <a href="#services">Services.</a>
-                    </li>
-                    <li className="header-contact">
-                        <a href="#contact">Contact.</a>
                     </li>
                 </ul>
             </nav>

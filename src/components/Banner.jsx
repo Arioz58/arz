@@ -53,6 +53,7 @@ const Banner = () => {
                     ))}
                 </motion.p>
             </div>
+            <button className="banner-contact">Contact.</button>
         </motion.div>
     );
 }
