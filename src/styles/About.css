@@ -1,3 +1,119 @@
-.about{
-    height: 1000px;
+:root{
+    --bg-bolor: #0D0D0D;
+}
+
+.arz-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arz-about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.arz-about-content h2{
+    font-family: 'Konkhmer Sleokchher', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.arz-about-content p{
+    font-family: 'Konkhmer Sleokchher', cursive;
+    font-size: 1.2rem;
+    color: #CACACA;
+    width: 55%;
+    margin-top: 60px;
+}
+
+.arz-about-content p b{
+    color: #ffffff;
+}
+
+.arz-about-content .arz-about-grid{
+    width: 55%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    gap: 20px;
+}
+
+.arz-about-grid div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.arz-about-grid div > .card-content{
+    background-color: var(--bg-bolor);
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.arz-about-grid div::before,
+.arz-about-grid div > .card-border{
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.arz-about-grid div::before{
+    background: radial-gradient(
+        800px circle at var(--x) var(--y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    z-index: 3;
+}
+
+.arz-about-grid div > .card-border{
+    background: radial-gradient(
+        400px circle at var(--x) var(--y),
+        rgba(255, 255, 255, 0.2),
+        transparent 40%
+    );
+    z-index: 1;
+}
+.arz-about-grid div:hover::before,
+.arz-about-grid div:hover > .card-border{
+    opacity: 1;
+}
+
+
+.arz-about-brk{
+    grid-column: span 2;
+}
+
+.ARZ-map{
+    width: 100%;
+    filter: drop-shadow(0 -10px 10px #658ed6);
+}
+
+.ARZ-phone{
+    width: 50%;
+}
+
+.ARZ-brk{
+    width: 30%;
 }
