@@ -4,27 +4,32 @@ import ARZphone from "../assets/ARZ-phone.png";
 import ARZbrk from "../assets/ARZ-brk.png";
 import { useEffect } from "react";
 
-const handleOnMouseMove = (e) => {
-    const { currentTarget: target } = e;
-
-    const rect = target.getBoundingClientRect(),
-        x = e.clientX - rect.left,
-        y = e.clientY - rect.top;
-
-    target.style.setProperty('--x', `${x}px`);
-    target.style.setProperty('--y', `${y}px`);
+document.getElementById('about').onmousemove = e => {
+    for(const card of document.querySelectorAll('.arz-about-grid > div')){
+        const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+    }
 }
 
 const About = () => {
     useEffect(() => {
-        const elements = document.querySelectorAll('.arz-about-grid > div');
-        elements.forEach(el => {
-            el.addEventListener('mousemove', handleOnMouseMove);
-        });
+        const handleMouseMove = e => {
+            for(const card of document.querySelectorAll('.arz-about-grid > div')){
+                const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            }
+        };
+    
+        document.getElementById('about').addEventListener('mousemove', handleMouseMove);
+    
         return () => {
-            elements.forEach(el => {
-                el.removeEventListener('mousemove', handleOnMouseMove);
-            });
+            document.getElementById('about').removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
 

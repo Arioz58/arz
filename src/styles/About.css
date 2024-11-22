@@ -95,8 +95,12 @@
     );
     z-index: 1;
 }
-.arz-about-grid div:hover::before,
-.arz-about-grid div:hover > .card-border{
+
+#about:hover .card-border{
+    opacity: 1;
+}
+
+.arz-about-grid div:hover::before{
     opacity: 1;
 }
 
