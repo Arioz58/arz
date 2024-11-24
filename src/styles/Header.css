@@ -23,10 +23,6 @@ header.sticky nav ul{
     font-size: calc(10px + 1vmin);
 }
 
-header.sticky nav a{
-    font-size: 1.5rem;
-}
-
 nav{
     display: flex;
     flex-direction: row;

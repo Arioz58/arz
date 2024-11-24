@@ -1,0 +1,100 @@
+.arz-services{
+    margin-top: 150px;
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.BG-services-img{
+    grid-column: 1;
+    grid-row: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 95vw;
+    height: 92vh;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.services-flex{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 3;
+}
+
+.arz-service-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.arz-service{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #0D0D0D;
+    border: 2px solid rgba(255, 255, 255, 0.1);;
+    overflow: hidden;  
+}
+
+.arz-service-grid > div:first-child {
+    position: relative;
+    justify-self: end;
+    right: -50px;
+}
+
+.arz-service-grid > div:last-child {
+    position: relative;
+    justify-self: start;
+    left: -50px;
+    z-index: -1;
+}
+
+.arz-service.back.left , .arz-service.back.right{
+    height: 80%;
+    width: 80%;
+}
+
+.arz-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arz-service.back.left img{
+    display: none;
+    
+}
+
+.arz-service img{
+    width: 80%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .BG-services-img {
+        height: 50vh; 
+    }
+
+    .arz-service {
+        width: 90%;
+        height: auto;
+    }
+}

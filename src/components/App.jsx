@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header.jsx";
 import Banner from "./Banner.jsx";
 import About from "./About.jsx"
+import Services from "./Services.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Banner />
       <About />
+      <Services />
     </div>
   );
 }

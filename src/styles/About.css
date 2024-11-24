@@ -35,7 +35,7 @@
 
 .arz-about-content .arz-about-grid{
     width: 55%;
-    height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1.25fr 2fr;
     grid-template-rows: 1fr 1fr;
