@@ -4,6 +4,7 @@ header {
     z-index: 1000;
     width: 50%;
     transition: all 0.5s cubic-bezier(0, 0.68, 0.18, 1);
+    animation: appear-blur 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
 header.sticky {
@@ -52,7 +53,6 @@ nav a{
     
 }
 
-/*animation: appear-blur 0.5s cubic-bezier(0, 0.68, 0.18, 1);*/
 @keyframes appear-blur {
     0% {
         opacity: 0;
