@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/arz/static/css/main.f89dcfb4.css",
+    "main.js": "/arz/static/js/main.2e1d028d.js",
+    "static/js/453.dede9fa2.chunk.js": "/arz/static/js/453.dede9fa2.chunk.js",
+    "static/media/ARZ-map.png": "/arz/static/media/ARZ-map.47e262c86eedd2a387d4.png",
+    "static/media/arz-INdex.png": "/arz/static/media/arz-INdex.f5a88a5a852708fff93b.png",
+    "static/media/arz-iphone-services.png": "/arz/static/media/arz-iphone-services.e24f15fc5d4b19bac1e3.png",
+    "static/media/pawel-czerwinski-YAtspJ-HV2E-unsplash-scaled.jpg": "/arz/static/media/pawel-czerwinski-YAtspJ-HV2E-unsplash-scaled.d7a082d53af13ab4fe38.jpg",
+    "static/media/ARZ-brk.png": "/arz/static/media/ARZ-brk.f32d58970ffcb2e627fc.png",
+    "static/media/ARZ-phone.png": "/arz/static/media/ARZ-phone.b2d5573dee113d21996c.png",
+    "static/media/arz-palette.png": "/arz/static/media/arz-palette.32627261518f641ff488.png",
+    "index.html": "/arz/index.html",
+    "main.f89dcfb4.css.map": "/arz/static/css/main.f89dcfb4.css.map",
+    "main.2e1d028d.js.map": "/arz/static/js/main.2e1d028d.js.map",
+    "453.dede9fa2.chunk.js.map": "/arz/static/js/453.dede9fa2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f89dcfb4.css",
+    "static/js/main.2e1d028d.js"
+  ]
+}
