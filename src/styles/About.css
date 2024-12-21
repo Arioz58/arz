@@ -6,13 +6,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .arz-about-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 80%;
+
 }
 
 .arz-about-content h2{
@@ -23,7 +26,7 @@
 
 .arz-about-content p{
     font-family: 'Konkhmer Sleokchher', cursive;
-    font-size: 1.2rem;
+    font-size: 50%;
     color: #CACACA;
     width: 55%;
     margin-top: 60px;
@@ -35,12 +38,13 @@
 
 .arz-about-content .arz-about-grid{
     width: 55%;
-    height: 80vh;
+    max-width: 2000px;
     display: grid;
     grid-template-columns: 1.25fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     text-align: center;
     gap: 20px;
+    aspect-ratio: 1/1;
 }
 
 .arz-about-grid div{

@@ -4,7 +4,8 @@ import splitStringUsingRegex from '../utils/splitStringUsingRegex';
 import {motion} from 'framer-motion';
 
 const heading = "ARZ Web Concept";
-const paragraph = "Votre Vision, Notre Creation";
+const paragraph1 = "Votre Vision,";
+const paragraph2 = "Notre Creation.";
 
 const charVariants = {
     hidden: {
@@ -27,10 +28,11 @@ const charVariants = {
 
 const Banner = () => {
     const headingChars = splitStringUsingRegex(heading);
-    const paragraphChars = splitStringUsingRegex(paragraph);
+    const paragraphChars1 = splitStringUsingRegex(paragraph1);
+    const paragraphChars2 = splitStringUsingRegex(paragraph2);
 
     return (
-        <motion.div 
+        <motion.div
             className="banner"
             id="home"
             initial={{ background: 'radial-gradient(circle farthest-corner at center 250%, #000000 75%, #000000 85%, #000000 95%)' }}
@@ -46,7 +48,14 @@ const Banner = () => {
                     ))}
                 </motion.h1>
                 <motion.p initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05, delayChildren: 0.7}}>
-                    {paragraphChars.map((char, index) => (
+                    {paragraphChars1.map((char, index) => (
+                        <motion.span key={index} transition={{duration: 0.25}} variants={charVariants}>
+                            {char === ' ' ? '\u00A0' : char}
+                        </motion.span>
+                    ))}
+                </motion.p>
+                <motion.p initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05, delayChildren: 1.4}}>
+                    {paragraphChars2.map((char, index) => (
                         <motion.span key={index} transition={{duration: 0.25}} variants={charVariants}>
                             {char === ' ' ? '\u00A0' : char}
                         </motion.span>

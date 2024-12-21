@@ -30,7 +30,7 @@
 .banner-content p {
     margin: 0;
     font-family: 'Gideon Roman', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     text-align: center;
 }
@@ -54,7 +54,6 @@
 }
 
 .banner-contact:hover{
-    cursor: pointer;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.295);
     transition: 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
