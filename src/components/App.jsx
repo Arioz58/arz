@@ -6,6 +6,7 @@ import Banner from "./Banner.jsx";
 import About from "./About.jsx"
 import Services from "./Services.jsx";
 import Footer from "./Footer.jsx";
+import {CobeDragToLocationDemo} from "./eldoraui/CobeDragToLocationDemo";
 
 function App() {
   return (

@@ -20,7 +20,7 @@
 
 .arz-about-content h2{
     font-family: 'Konkhmer Sleokchher', cursive;
-    font-size: 2.5rem;
+    font-size: calc(13px + 2vmin);
     margin-bottom: 1rem;
 }
 
@@ -28,8 +28,12 @@
     font-family: 'Konkhmer Sleokchher', cursive;
     font-size: 50%;
     color: #CACACA;
-    width: 55%;
-    margin-top: 60px;
+    width: 80%;
+    margin-top: 10%;
+}
+
+.arz-about-content .globe::before {
+    display: none;
 }
 
 .arz-about-content p b{
@@ -41,7 +45,7 @@
     max-width: 2000px;
     display: grid;
     grid-template-columns: 1.25fr 2fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
     gap: 20px;
     aspect-ratio: 1/1;
@@ -58,13 +62,17 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.arz-about-grid span div {
+    background-color: rgba(255, 255, 255, 0);
+}
+
 .arz-about-grid div > .card-content{
     background-color: var(--bg-bolor);
     height: calc(100% - 4px);
     width: calc(100% - 4px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;    
     position: relative;
     z-index: 2;
 }
@@ -123,7 +131,9 @@
 }
 
 .ARZ-brk{
-    width: 30%;
+    position: absolute;
+    bottom: 0;
+    width: 18%;
 }
 
 .active{

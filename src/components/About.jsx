@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import "../styles/About.css";
-import { CobeDragToLocation } from "../components/eldoraui/cobegloberotatetolocation";
-import ARZmap from "../assets/ARZ-map.png";
+import "../styles/global.css";
+import {CobeDragToLocationDemo} from "./eldoraui/CobeDragToLocationDemo";
 import ARZphone from "../assets/ARZ-phone.png";
 import ARZbrk from "../assets/ARZ-brk.png";
 
@@ -73,25 +73,22 @@ const About = () => {
                     <div ref={mapRef} className="arz-about-map inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            <div className="relative z-10 h-[700px] w-full overflow-hidden rounded-lg border bg-background">
-                                <CobeDragToLocation />
-                            </div>
-                            {/*<p>ARZ Web Concept est une agence de <b>développement web</b> basée à <b>Strasbourg</b><br />🥨</p>
-                            <img className="ARZ-map" src={ARZmap} alt="map" />  */}
+                            <p>ARZ Web Concept est une agence de <b>développement web</b> basée à <b>Strasbourg</b><br />🥨</p>
+                            {CobeDragToLocationDemo()}
                         </div>
                     </div>
                     <div ref={phoneRef} className="arz-about-phone inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            {/*<p>ARZ Web Concept est spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
-                            <img className="ARZ-phone" src={ARZphone} alt="phone" /> */}
+                            <p>ARZ Web Concept est spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
+                            <img className="ARZ-phone" src={ARZphone} alt="phone" />
                         </div>
                     </div>
                     <div ref={brkRef} className="arz-about-brk inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            {/*<p>Nous mettons notre <b>expertise à votre service</b> pour vous aider à <b>concrétiser vos projets web.</b> Que vous soyez une entreprise, une association ou un particulier, <b>nous vous accompagnons</b> dans la <b>réalisation de votre projet web.</b></p>
-                            <img className="ARZ-brk" src={ARZbrk} alt="brk" />*/}
+                            <p>Nous mettons notre <b>expertise à votre service</b> pour vous aider à <b>concrétiser vos projets web.</b> Que vous soyez une entreprise, une association ou un particulier, <b>nous vous accompagnons</b> dans la <b>réalisation de votre projet web.</b></p>
+                            <img className="ARZ-brk" src={ARZbrk} alt="brk" />
                         </div>
                     </div>
                 </div>
