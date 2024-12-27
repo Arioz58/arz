@@ -3,6 +3,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import "../styles/CustomCursor.css";
 
 const CustomCursor = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const [isClicked, setIsClicked] = useState(false);
@@ -14,6 +15,23 @@ const CustomCursor = () => {
   const opacitySpring = useSpring(isOutside ? 0 : 1, springConfig);
 
   useEffect(() => {
+    // Check if device is mobile or tablet
+    const checkDevice = () => {
+      setIsMobile(window.matchMedia('(max-width: 1024px)').matches);
+    };
+
+    // Initial check
+    checkDevice();
+
+    // Add listener for window resize
+    window.addEventListener('resize', checkDevice);
+
+    return () => window.removeEventListener('resize', checkDevice);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return; // Don't add event listeners on mobile
+
     const handleMouseMove = (event) => {
       x.set(event.clientX);
       y.set(event.clientY);
@@ -48,11 +66,14 @@ const CustomCursor = () => {
       document.removeEventListener('mouseout', handleMouseOut);
       document.removeEventListener('mouseover', handleMouseOver);
     };
-  }, [x, y]);
+  }, [x, y, isMobile]);
 
   useEffect(() => {
     opacitySpring.set(isOutside ? 0 : 1);
   }, [isOutside, opacitySpring]);
+
+  // Don't render cursor on mobile devices
+  if (isMobile) return null;
 
   return (
     <motion.div

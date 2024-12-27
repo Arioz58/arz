@@ -29,10 +29,15 @@ const servicesVariants = {
 const Services = () => {
     return (
         <div className="arz-services" id="services">
-            <div className="bg-center">
-                <h2>Services</h2>
+            <motion.div 
+                className="bg-container"
+                variants={servicesVariants}
+                initial="hidden"
+                whileInView="visible"
+            >   
+                <h2>Services.</h2>
                 <motion.div className="services-flex" initial="hidden" whileInView="visible" transition={{staggerChildren: 0.2}}>
-                    <motion.div className="arz-service back left" variants={servicesVariants} >
+                    {/*<motion.div className="arz-service back left" variants={servicesVariants} >
                         <p>phone</p>
                     </motion.div>
                     <motion.div className="arz-service" variants={servicesVariants} >
@@ -40,9 +45,10 @@ const Services = () => {
                     </motion.div>
                     <motion.div className="arz-service back right" variants={servicesVariants} >
                         <p>phone</p>
-                    </motion.div>
+                    </motion.div>*/}
                 </motion.div>
-            </div>
+                <img className="bg" src={services_bg} alt="services background" />
+            </motion.div>
         </div>
     );
 }
