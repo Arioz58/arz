@@ -121,18 +121,12 @@
     grid-column: span 2;
 }
 
-.ARZ-map{
-    width: 100%;
-    filter: drop-shadow(0 -10px 10px #658ed6);
-}
-
 .ARZ-phone{
     width: 50%;
+    
 }
 
 .ARZ-brk{
-    position: absolute;
-    bottom: 0;
     width: 18%;
 }
 
@@ -142,6 +136,29 @@
 
 .inactive{
     animation: fadeOut 0.7s cubic-bezier(0, 0.68, 0.18, 1) forwards;
+}
+
+@media (max-width: 768px) {
+    .arz-about-content .arz-about-grid{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .arz-about-content{
+        width: 90vw;
+    }
+
+    .ARZ-phone{
+        width: 60%;
+    }
+
+    .ARZ-brk{
+        width: 20%;
+    }
+
+    .arz-about-grid div{
+        border-radius: 25px;
+    }
 }
 
 @keyframes fadeIn {

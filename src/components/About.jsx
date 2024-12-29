@@ -80,14 +80,14 @@ const About = () => {
                     <div ref={phoneRef} className="arz-about-phone inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            <p>ARZ Web Concept est spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
+                            <p>Nous sommes spécialisée dans la <b>création de sites web</b> et <b>d'applications web</b> sur mesure</p>
                             <img className="ARZ-phone" src={ARZphone} alt="phone" />
                         </div>
                     </div>
                     <div ref={brkRef} className="arz-about-brk inactive">
                         <div className="card-border"></div>
                         <div className="card-content">
-                            <p>Nous mettons notre <b>expertise à votre service</b> pour vous aider à <b>concrétiser vos projets web.</b> Que vous soyez une entreprise, une association ou un particulier, <b>nous vous accompagnons</b> dans la <b>réalisation de votre projet web.</b></p>
+                            <p>Nous mettons notre <b>expertise à votre service</b> pour vous aider à <b>concrétiser vos projets web.</b></p>
                             <img className="ARZ-brk" src={ARZbrk} alt="brk" />
                         </div>
                     </div>

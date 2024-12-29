@@ -50,7 +50,61 @@ nav a{
     text-align: center;
     color: #FFF;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background: linear-gradient(173deg, rgb(117, 117, 117) 0%, rgba(13,13,13,1) 30%);
+        position: fixed;
+        bottom: 15px;
+        top: unset;
+        width: 50%;
+        height: 50px;
+        border-radius: 1000000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a{
+        height: 34px;
+    }
     
+    .mobile-nav {
+        background-color: #0d0d0d;
+        border-radius: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+    }
+
+    .mobile-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px;
+        margin: 5px;
+    }
+
+    .mobile-menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav ul li img {
+        filter: invert(1) brightness(85%);
+        height: 34px;
+    }
+
+    .mobile-nav p{
+        margin: 0;
+    }
 }
 
 @keyframes appear-blur {

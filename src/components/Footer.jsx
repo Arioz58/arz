@@ -35,7 +35,7 @@ const charGlowVariants = {
 const Footer = () => {
     const buttonChars = splitStringUsingRegex(buttonText);
     return (
-        <div className="arz-footer">
+        <div className="arz-footer" id="contact">
             <div className="slider">
                 <div className="slide slide1"> 
                     <p>Contactez-nous&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowDown} className="icon" />&nbsp;&nbsp;</p>

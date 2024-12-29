@@ -70,6 +70,34 @@
     filter: blur(90px);
 }
 
+@media screen and (max-width: 768px) {
+    .arz-footer {
+        margin-bottom: 0;
+    }
+
+    .slider {
+        margin: 0;
+    }
+
+    .slide {
+        font-size: 2rem;
+    }
+
+    .cc {
+        font-size: 0.8rem;
+        position: relative;
+        top: -60px;
+    }
+
+    .arz-footer::after {
+        height: 500px;
+        width: 500px;
+        border: solid 50px #006FFF;
+        top: 50%;
+        filter: blur(20px);
+    }
+}
+
 @keyframes slider {
     0% {
         transform: translateX(0);

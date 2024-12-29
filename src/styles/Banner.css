@@ -58,6 +58,34 @@
     transition: 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
+@media (max-width: 768px) { /* media query for mobile devices */
+    
+    .banner-content {
+        margin-bottom: 50px;
+        position: relative;
+        top: -10%;
+    }
+
+    .banner-contact{
+        position: relative;
+        top: -10%;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+
+    .banner-content p {
+        font-size: 2rem;
+    }
+
+    .banner-contact {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
