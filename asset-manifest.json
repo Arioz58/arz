@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/arz/static/css/main.f89dcfb4.css",
-    "main.js": "/arz/static/js/main.2e1d028d.js",
+    "main.css": "/arz/static/css/main.cd1639c7.css",
+    "main.js": "/arz/static/js/main.aa250420.js",
     "static/js/453.dede9fa2.chunk.js": "/arz/static/js/453.dede9fa2.chunk.js",
-    "static/media/ARZ-map.png": "/arz/static/media/ARZ-map.47e262c86eedd2a387d4.png",
+    "static/media/services.png": "/arz/static/media/services.d90efd8d5c99d5876355.png",
     "static/media/arz-INdex.png": "/arz/static/media/arz-INdex.f5a88a5a852708fff93b.png",
+    "static/media/ARZ-phone.png": "/arz/static/media/ARZ-phone.ea1a9f88ff1a21051481.png",
     "static/media/arz-iphone-services.png": "/arz/static/media/arz-iphone-services.e24f15fc5d4b19bac1e3.png",
-    "static/media/pawel-czerwinski-YAtspJ-HV2E-unsplash-scaled.jpg": "/arz/static/media/pawel-czerwinski-YAtspJ-HV2E-unsplash-scaled.d7a082d53af13ab4fe38.jpg",
-    "static/media/ARZ-brk.png": "/arz/static/media/ARZ-brk.f32d58970ffcb2e627fc.png",
-    "static/media/ARZ-phone.png": "/arz/static/media/ARZ-phone.b2d5573dee113d21996c.png",
+    "static/media/ARZ-brk.png": "/arz/static/media/ARZ-brk.a9e1b773c96c54c73ffe.png",
     "static/media/arz-palette.png": "/arz/static/media/arz-palette.32627261518f641ff488.png",
+    "static/media/House_01.svg": "/arz/static/media/House_01.f51dec68bf48edc5cd252aec576053fa.svg",
+    "static/media/Handbag.svg": "/arz/static/media/Handbag.5f13b53d50732f06b1ead289c61fac41.svg",
     "index.html": "/arz/index.html",
-    "main.f89dcfb4.css.map": "/arz/static/css/main.f89dcfb4.css.map",
-    "main.2e1d028d.js.map": "/arz/static/js/main.2e1d028d.js.map",
+    "static/media/Chat_Conversation.svg": "/arz/static/media/Chat_Conversation.ac09fa11879813697763243dbfc62d6c.svg",
+    "static/media/Info.svg": "/arz/static/media/Info.657ddad32deb81431385d6bedc231b7a.svg",
+    "main.cd1639c7.css.map": "/arz/static/css/main.cd1639c7.css.map",
+    "main.aa250420.js.map": "/arz/static/js/main.aa250420.js.map",
     "453.dede9fa2.chunk.js.map": "/arz/static/js/453.dede9fa2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f89dcfb4.css",
-    "static/js/main.2e1d028d.js"
+    "static/css/main.cd1639c7.css",
+    "static/js/main.aa250420.js"
   ]
 }
