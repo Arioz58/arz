@@ -7,6 +7,16 @@ header {
     animation: appear-blur 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a img{
+    height: 30px;
+}
+
 header.sticky {
     margin-top: 10px;
     padding: 0 10px;
@@ -20,7 +30,7 @@ header.sticky {
 }
 
 header.sticky nav ul{
-    gap: 10px;
+    gap: 15px;
     font-size: calc(10px + 1vmin);
 }
 

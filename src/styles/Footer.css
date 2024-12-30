@@ -10,8 +10,11 @@
 }
 
 .arz-footer button {
-    margin-bottom: 300px;
     z-index: 1;
+}
+
+.arz-footer .banner-contact {
+    margin-bottom: 300px;
 }
 
 .cc{
@@ -68,7 +71,10 @@
     position: absolute;
     top: 40%;
     filter: blur(90px);
+    z-index: 0;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .arz-footer {

@@ -62,6 +62,7 @@ const Banner = () => {
     const buttonChars = splitStringUsingRegex(buttonText);
 
     const [showForm, setShowForm] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -77,9 +78,12 @@ const Banner = () => {
             'R6rTb6nJ9kmypEtCc'
         ).then(
             (result) => {
-                console.log('Email sent successfully');
                 setShowForm(false);
+                setShowSuccess(true);
                 setFormData({ name: '', email: '', message: '' });
+                setTimeout(() => {
+                    setShowSuccess(false);
+                }, 5000);
             },
             (error) => {
                 console.log('Failed to send email:', error);
@@ -94,7 +98,7 @@ const Banner = () => {
             initial={{ background: 'radial-gradient(circle farthest-corner at center 250%, #000000 75%, #000000 85%, #000000 95%)' }}
             animate={{ background: 'radial-gradient(circle farthest-corner at center 250%, #000000 75%, #001fb9 85%, #00aaff 95%)' }}
             transition={{ duration: 3, ease: "easeInOut" }}
-        >
+            >
             <div className="banner-content">
                 <motion.h1 initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05}}>
                     {headingChars.map((char, index) => (
@@ -176,12 +180,53 @@ const Banner = () => {
                             onChange={(e) => setFormData({...formData, message: e.target.value})}
                         />
                         <div className="form-buttons">
-                            <motion.button type="submit">Send</motion.button>
+                            <motion.button type="submit">Envoyer</motion.button>
                             <motion.button type="button" onClick={() => setShowForm(false)}>
-                                Cancel
+                                Annuler
                             </motion.button>
                         </div>
                     </motion.form>
+                )}
+            </AnimatePresence>
+            <AnimatePresence>
+                {showSuccess && (
+                    <motion.div 
+                    className="success-message"
+                    initial={{ scale: 0.3, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0.3, opacity: 0 }}
+                    transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                >
+                    <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <motion.circle 
+                            className="checkmark__circle" 
+                            cx="26" 
+                            cy="26" 
+                            r="23" 
+                            fill="none"
+                            initial={{ pathLength: 0, opacity: 0 }}
+                            animate={{ pathLength: 1, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: "easeInOut" }}
+                        />
+                        <motion.path
+                            className="checkmark__check"
+                            fill="none"
+                            d="M15 27 l7 7 l15-15"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            initial={{ pathLength: 0, opacity: 0 }}
+                            animate={{ pathLength: 1, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.8 }}
+                        />
+                    </svg>
+                    <motion.p
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1.2 }}
+                    >
+                        Email envoyé avec succès! <br /> nous vous répondrons bientôt.
+                    </motion.p>
+                </motion.div>
                 )}
             </AnimatePresence>
         </motion.div>

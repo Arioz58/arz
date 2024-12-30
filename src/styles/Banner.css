@@ -69,6 +69,7 @@
     border-radius: 1rem;
     width: 100%;
     max-width: 500px;
+    z-index: 2;
 }
 
 .contact-form input,
@@ -106,6 +107,56 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+.success-message {
+    position: fixed;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: solid 1px #4ab71b44;
+    padding: 2rem;
+    border-radius: 1rem;
+    z-index: 9999;
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 3;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+}
+
+.checkmark__circle {
+    stroke: #4bb71b;
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    fill: none;
+}
+
+.checkmark__check {
+    stroke: #4bb71b;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.success-message p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
 @media (max-width: 768px) { /* media query for mobile devices */
     
     .banner-content {
@@ -132,6 +183,11 @@
         width: 200px;
         font-size: 1.2rem;
     }
+
+    .contact-form {
+        padding: 1rem;
+        max-width: 300px;
+    }
 }
 
 @keyframes appear {
@@ -144,5 +200,11 @@
         opacity: 1;
         scale: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
     }
 }

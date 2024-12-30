@@ -4,6 +4,7 @@ import Chat from "../assets/mobile_nav/Chat_Conversation.svg";
 import Home from "../assets/mobile_nav/House_01.svg";
 import Services from "../assets/mobile_nav/Handbag.svg";
 import About from "../assets/mobile_nav/Info.svg";
+import ARZ from "../assets/logo-arz.png";
 
 const Header = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -56,7 +57,7 @@ const Header = () => {
         ) : (
             <header className={`header ${isSticky ? 'sticky' : ''}`}>
                 <nav>
-                    <a href="#home">ARZ.</a>
+                    <a href="#home"><img src={ARZ} alt="" /></a>
                     <ul>
                         <li>
                             <a href="#about">À propos.</a>
