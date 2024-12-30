@@ -68,7 +68,7 @@ const About = () => {
     return (
         <div ref={aboutRef} className="arz-about" id="about">
             <div className="arz-about-content">
-                <h2 className="sticky">A propos.</h2>
+                <h2 className="sticky">À propos.</h2>
                 <div className="arz-about-grid">
                     <div ref={mapRef} className="arz-about-map inactive">
                         <div className="card-border"></div>

@@ -59,10 +59,7 @@ const Header = () => {
                     <a href="#home">ARZ.</a>
                     <ul>
                         <li>
-                            <a href="#home">Home.</a>
-                        </li>
-                        <li>
-                            <a href="#about">About.</a>
+                            <a href="#about">À propos.</a>
                         </li>
                         <li>
                             <a href="#services">Services.</a>
