@@ -1,3 +1,2 @@
-fix les image du about
-fix le wrap du BG services
-.header.sticky nav a to remove
+fix about component on mobile
+SEO
