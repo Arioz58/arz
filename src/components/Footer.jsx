@@ -53,7 +53,7 @@ const Footer = () => {
             formData,
             'R6rTb6nJ9kmypEtCc'
         ).then(
-            (result) => {
+            () => {
                 setShowForm(false);
                 setShowSuccess(true);
                 setFormData({ name: '', email: '', message: '' });
@@ -129,7 +129,7 @@ const Footer = () => {
                 >
                     <motion.input
                         type="text"
-                        placeholder="Name"
+                        placeholder="Nom"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
@@ -155,13 +155,13 @@ const Footer = () => {
         </AnimatePresence>
         <AnimatePresence>
             {showSuccess && (
-                <motion.div 
+            <motion.div 
                 className="success-message"
                 initial={{ scale: 0.3, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.3, opacity: 0 }}
                 transition={{ type: "spring", stiffness: 200, damping: 15 }}
-            >
+                >
                 <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                     <motion.circle 
                         className="checkmark__circle" 

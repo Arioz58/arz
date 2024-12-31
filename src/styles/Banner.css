@@ -110,6 +110,7 @@
 .success-message {
     position: fixed;
     width: 300px;
+    top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;

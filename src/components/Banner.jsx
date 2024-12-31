@@ -164,7 +164,7 @@ const Banner = () => {
                     >
                         <motion.input
                             type="text"
-                            placeholder="Name"
+                            placeholder="Nom"
                             value={formData.name}
                             onChange={(e) => setFormData({...formData, name: e.target.value})}
                         />

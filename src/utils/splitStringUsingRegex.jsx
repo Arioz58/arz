@@ -5,7 +5,6 @@ function splitStringUsingRegex(str){
     let match;
 
     while ((match = regex.exec(str)) !== null) {
-        console.log(match);
         characters.push(match[0]);
     }
 
