@@ -47,6 +47,8 @@ const Footer = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setShowForm(false);
+        setShowSuccess(true);
         emailjs.send(
             'service_xd9dldt',
             'template_ftkuhyy',
@@ -54,8 +56,6 @@ const Footer = () => {
             'R6rTb6nJ9kmypEtCc'
         ).then(
             () => {
-                setShowForm(false);
-                setShowSuccess(true);
                 setFormData({ name: '', email: '', message: '' });
                 setTimeout(() => {
                     setShowSuccess(false);
@@ -63,6 +63,8 @@ const Footer = () => {
             },
             (error) => {
                 console.log('Failed to send email:', error);
+                setShowForm(true);
+                setShowSuccess(false);
             }
         );
     };

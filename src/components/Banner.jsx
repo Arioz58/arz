@@ -71,15 +71,15 @@ const Banner = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setShowForm(false);
+        setShowSuccess(true);
         emailjs.send(
             'service_xd9dldt',
             'template_ftkuhyy',
             formData,
             'R6rTb6nJ9kmypEtCc'
         ).then(
-            (result) => {
-                setShowForm(false);
-                setShowSuccess(true);
+            () => {
                 setFormData({ name: '', email: '', message: '' });
                 setTimeout(() => {
                     setShowSuccess(false);
@@ -87,6 +87,8 @@ const Banner = () => {
             },
             (error) => {
                 console.log('Failed to send email:', error);
+                setShowForm(true);
+                setShowSuccess(false);
             }
         );
     };
