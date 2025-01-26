@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b980833.css",
-    "main.js": "/static/js/main.14e77cc3.js",
+    "main.css": "/static/css/main.9521795c.css",
+    "main.js": "/static/js/main.4020f313.js",
     "static/js/453.dede9fa2.chunk.js": "/static/js/453.dede9fa2.chunk.js",
+    "static/media/template.png": "/static/media/template.18841c73513196ab9eb3.png",
     "static/media/services.png": "/static/media/services.d90efd8d5c99d5876355.png",
-    "static/media/arz-INdex.png": "/static/media/arz-INdex.f5a88a5a852708fff93b.png",
+    "static/media/arz-iphone-services.png": "/static/media/arz-iphone-services.a2eea8ee4d6db5e20050.png",
     "static/media/ARZ-phone.png": "/static/media/ARZ-phone.ea1a9f88ff1a21051481.png",
-    "static/media/arz-iphone-services.png": "/static/media/arz-iphone-services.e24f15fc5d4b19bac1e3.png",
     "static/media/ARZ-brk.png": "/static/media/ARZ-brk.a9e1b773c96c54c73ffe.png",
-    "static/media/arz-palette.png": "/static/media/arz-palette.32627261518f641ff488.png",
+    "static/media/arz-palette.png": "/static/media/arz-palette.c73d64efd337f2dd4a3c.png",
     "static/media/House_01.svg": "/static/media/House_01.f51dec68bf48edc5cd252aec576053fa.svg",
     "index.html": "/index.html",
     "static/media/Handbag.svg": "/static/media/Handbag.5f13b53d50732f06b1ead289c61fac41.svg",
+    "static/media/logo-arz.svg": "/static/media/logo-arz.97f665350e59b59b898b460805e950da.svg",
     "static/media/Chat_Conversation.svg": "/static/media/Chat_Conversation.ac09fa11879813697763243dbfc62d6c.svg",
     "static/media/Info.svg": "/static/media/Info.657ddad32deb81431385d6bedc231b7a.svg",
-    "main.9b980833.css.map": "/static/css/main.9b980833.css.map",
-    "main.14e77cc3.js.map": "/static/js/main.14e77cc3.js.map",
+    "main.9521795c.css.map": "/static/css/main.9521795c.css.map",
+    "main.4020f313.js.map": "/static/js/main.4020f313.js.map",
     "453.dede9fa2.chunk.js.map": "/static/js/453.dede9fa2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b980833.css",
-    "static/js/main.14e77cc3.js"
+    "static/css/main.9521795c.css",
+    "static/js/main.4020f313.js"
   ]
 }
