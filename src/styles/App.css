@@ -8,3 +8,30 @@
   color: white;
   background-color: #000000;
 }
+
+#root::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh; /* Adjust height as needed */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  pointer-events: none;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  #root::after {
+    height: 20vh;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+}

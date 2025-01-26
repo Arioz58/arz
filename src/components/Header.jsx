@@ -4,7 +4,7 @@ import Chat from "../assets/mobile_nav/Chat_Conversation.svg";
 import Home from "../assets/mobile_nav/House_01.svg";
 import Services from "../assets/mobile_nav/Handbag.svg";
 import About from "../assets/mobile_nav/Info.svg";
-import ARZ from "../assets/logo-arz.png";
+import ARZ from "../assets/logo-arz.svg";
 
 const Header = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [isMobile]);
-    
+
     return (
         isMobile ? (
             <header className="header">

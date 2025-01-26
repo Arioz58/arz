@@ -14,7 +14,8 @@ header a {
 }
 
 header a img{
-    height: 30px;
+    height: 3.5vh;
+    transition: all 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
 header.sticky {
@@ -23,9 +24,14 @@ header.sticky {
     width: 30%;
     height: 5%;
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.151), rgba(255, 255, 255, 0));
+    background: #7e7e7e21;
     backdrop-filter: blur(10px);
     border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0, 0.68, 0.18, 1);
+}
+
+header.sticky a img{
+    height: 2.5vh;
     transition: all 0.5s cubic-bezier(0, 0.68, 0.18, 1);
 }
 
