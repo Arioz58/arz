@@ -92,3 +92,9 @@
 .arz-service p {
     color: #666;
 }
+
+@media screen and (min-width: 1024px) {
+    .arz-services {
+        display: none;
+    }
+}
